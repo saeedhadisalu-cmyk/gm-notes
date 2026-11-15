@@ -58,6 +58,26 @@
       font-size: 18px;
     }
 
+    /* Share Button */
+    .share-btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 25px;
+      background: white;
+      color: #0756b5;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .share-btn:hover {
+      background: #e7f1ff;
+      transform: translateY(-2px);
+    }
+
     .section {
       padding: 50px 8%;
       text-align: center;
@@ -149,6 +169,11 @@
     <h1>Welcome to GM NOTES</h1>
     <p>Your Learning Journey Starts Here!</p>
     <p>Study Notes, Important Questions and MCQs</p>
+
+    <!-- Share Website Button -->
+    <button class="share-btn" onclick="shareWebsite()">
+      Share Website
+    </button>
   </section>
 
   <section class="section" id="subjects">
@@ -157,7 +182,6 @@
 
     <div class="subjects">
 
-      <!-- Physics Page Link -->
       <a href="physics.html" class="subject">
         <h3>Physics</h3>
         <p>Notes, formulas and important questions.</p>
@@ -207,6 +231,39 @@
     <p>© 2026 GM NOTES. All Rights Reserved.</p>
     <p>Learn Today, Lead Tomorrow!</p>
   </footer>
+
+  <script>
+    async function shareWebsite() {
+      const websiteLink = "https://saeedhadisalu-cmyk.github.io/gm-notes/";
+
+      const shareData = {
+        title: "GM NOTES - Educational Website",
+        text: "Visit GM NOTES for study notes, important questions and MCQs!",
+        url: websiteLink
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (error) {
+          if (error.name !== "AbortError") {
+            copyWebsiteLink(websiteLink);
+          }
+        }
+      } else {
+        copyWebsiteLink(websiteLink);
+      }
+    }
+
+    async function copyWebsiteLink(link) {
+      try {
+        await navigator.clipboard.writeText(link);
+        alert("Website link copied successfully!");
+      } catch (error) {
+        prompt("Copy your website link:", link);
+      }
+    }
+  </script>
 
 </body>
 </html>
