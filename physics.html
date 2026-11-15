@@ -2,158 +2,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Physics Notes - GM NOTES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics - GM NOTES</title>
 
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
 
-body {
-  background: #f4f8ff;
-  color: #26344a;
-  line-height: 1.7;
-}
+    header {
+      background: #0756a5;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
 
-header {
-  background: #0756b5;
-  color: white;
-  padding: 20px 8%;
-}
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 15px;
+    }
 
-header h1 {
-  margin-bottom: 8px;
-}
+    h2 {
+      color: #0756a5;
+      text-align: center;
+    }
 
-header a {
-  color: white;
-  text-decoration: none;
-}
+    .card {
+      display: block;
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #1e293b;
+      box-shadow: 0 3px 10px #00000012;
+      transition: 0.3s;
+    }
 
-.hero {
-  background: linear-gradient(120deg, #0756b5, #168bd8);
-  color: white;
-  text-align: center;
-  padding: 55px 15px;
-}
+    .card:hover {
+      transform: translateY(-4px);
+      background: #e0f2fe;
+    }
 
-.hero h2 {
-  font-size: 34px;
-}
+    .card h3 {
+      color: #0756a5;
+      margin-top: 0;
+    }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.container h2 {
-  color: #0756b5;
-  margin-bottom: 20px;
-}
-
-.chapters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px #00000012;
-  border-left: 5px solid #168bd8;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  color: #0756b5;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #596579;
-}
-
-footer {
-  background: #073b78;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-}
-</style>
+    footer {
+      background: #0756a5;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
   <h1>GM NOTES</h1>
-  <a href="index.html">← Back to Home</a>
+  <p>Physics Study Notes</p>
 </header>
 
-<section class="hero">
-  <h2>Physics Notes</h2>
-  <p>Learn Physics Easily with GM NOTES</p>
-</section>
-
-<main class="container">
+<div class="container">
 
   <h2>Physics Chapters</h2>
 
-  <div class="chapters">
+  <a href="chapter1.html" class="card">
+    <h3>Chapter 1: Physical Quantities and Measurement</h3>
+    <p>Fundamental quantities, SI units, derived quantities and MCQs.</p>
+  </a>
 
-    <a href="chapter1.html" class="card">
-      <h3>Chapter 1</h3>
-      <p>Physical Quantities and Measurement</p>
-      <p>Click to Read Notes →</p>
-    </a>
+  <a href="chapter2.html" class="card">
+    <h3>Chapter 2: Kinematics</h3>
+    <p>Distance, displacement, speed, velocity, acceleration and equations of motion.</p>
+  </a>
 
-    <a href="#" class="card">
-      <h3>Chapter 2</h3>
-      <p>Kinematics</p>
-    </a>
-
-    <a href="#" class="card">
-      <h3>Chapter 3</h3>
-      <p>Dynamics</p>
-    </a>
-
-    <a href="#" class="card">
-      <h3>Chapter 4</h3>
-      <p>Turning Effect of Forces</p>
-    </a>
-
-    <a href="#" class="card">
-      <h3>Chapter 5</h3>
-      <p>Work and Energy</p>
-    </a>
-
-    <a href="#" class="card">
-      <h3>Chapter 6</h3>
-      <p>Properties of Matter</p>
-    </a>
-
+  <div class="card">
+    <h3>Chapter 3: Dynamics</h3>
+    <p>Coming Soon...</p>
   </div>
 
-</main>
+  <div class="card">
+    <h3>Chapter 4: Turning Effect of Forces</h3>
+    <p>Coming Soon...</p>
+  </div>
+
+  <div class="card">
+    <h3>Chapter 5: Gravitation</h3>
+    <p>Coming Soon...</p>
+  </div>
+
+</div>
 
 <footer>
-  <p>© 2026 GM NOTES. All Rights Reserved.</p>
-  <p>Learn Today, Lead Tomorrow!</p>
+  <p>© 2026 GM NOTES | Learn Something New Every Day</p>
 </footer>
 
 </body>
