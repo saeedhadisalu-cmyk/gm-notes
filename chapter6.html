@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Physics Notes | GM NOTES</title>
+<title>Chapter 6 - Gravitation | GM NOTES</title>
 
 <style>
 * {
@@ -24,6 +24,10 @@ header {
   background: #0756b5;
   color: white;
   padding: 20px 8%;
+}
+
+header h2 {
+  color: white;
 }
 
 header a {
@@ -61,23 +65,43 @@ h2 {
   margin-bottom: 12px;
 }
 
-.topic p {
+h3 {
+  color: #0756b5;
+  margin: 12px 0 5px;
+}
+
+p {
   margin-bottom: 10px;
 }
 
-.chapter-link {
-  display: inline-block;
-  background: #0756b5;
-  color: white;
-  padding: 9px 18px;
-  margin-top: 8px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
+ul, ol {
+  padding-left: 25px;
 }
 
-.chapter-link:hover {
-  background: #073b78;
+.formula {
+  background: #e7f1ff;
+  padding: 12px;
+  border-left: 4px solid #0756b5;
+  margin: 12px 0;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  border: 1px solid #d5dfed;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #e7f1ff;
+  color: #0756b5;
 }
 
 footer {
@@ -95,6 +119,10 @@ footer {
   .topic {
     padding: 18px;
   }
+
+  table {
+    font-size: 14px;
+  }
 }
 </style>
 </head>
@@ -102,58 +130,489 @@ footer {
 <body>
 
 <header>
-  <h2 style="color:white;">GM NOTES</h2>
-  <a href="index.html">← Back to Home</a>
+  <h2>GM NOTES</h2>
+  <a href="physics.html">← Back to Physics</a>
 </header>
 
 <section class="hero">
-  <h1>Class 9 Physics Notes</h1>
-  <p>Complete Physics Chapters | Easy English Notes</p>
-  <p>GM NOTES - Learn Physics Easily</p>
+  <h1>Chapter 6: Gravitation</h1>
+  <p>Easy Physics Notes | GM NOTES</p>
 </section>
 
 <main class="container">
 
 <section class="topic">
-  <h2>Chapter 1: Physical Quantities and Measurement</h2>
-  <p>Physical quantities, fundamental quantities, derived quantities, SI units, measuring instruments and prefixes.</p>
-  <a class="chapter-link" href="chapter1.html">Open Chapter 1</a>
+<h2>1. Gravitation</h2>
+<p>Gravitation is the force of attraction between any two objects having mass.</p>
+
+<h3>Examples:</h3>
+<ul>
+<li>The Earth attracts objects towards its center.</li>
+<li>The Moon revolves around the Earth due to gravity.</li>
+<li>The planets revolve around the Sun due to gravitational force.</li>
+</ul>
 </section>
 
 <section class="topic">
-  <h2>Chapter 2: Kinematics</h2>
-  <p>Distance, displacement, speed, velocity, acceleration and equations of motion.</p>
-  <a class="chapter-link" href="chapter2.html">Open Chapter 2</a>
+<h2>2. Newton's Law of Gravitation</h2>
+<p>Newton's law of universal gravitation states that every object in the universe attracts every other object with a force.</p>
+
+<p>This force is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.</p>
+
+<div class="formula">
+F = G(m₁ × m₂) / r²
+</div>
+
+<h3>Where:</h3>
+<ul>
+<li>F = Gravitational force (N)</li>
+<li>G = Universal gravitational constant</li>
+<li>m₁ = Mass of first object (kg)</li>
+<li>m₂ = Mass of second object (kg)</li>
+<li>r = Distance between their centers (m)</li>
+</ul>
+
+<h3>Example:</h3>
+<p>Two objects have masses of 5 kg and 10 kg. Their distance is 2 m. Find the gravitational force.</p>
+
+<p>Given:</p>
+<ul>
+<li>m₁ = 5 kg</li>
+<li>m₂ = 10 kg</li>
+<li>r = 2 m</li>
+<li>G = 6.67 × 10⁻¹¹ Nm²/kg²</li>
+</ul>
+
+<div class="formula">
+F = G(m₁ × m₂) / r²<br>
+F = (6.67 × 10⁻¹¹ × 5 × 10) / 2²<br>
+F = 8.34 × 10⁻¹⁰ N
+</div>
 </section>
 
 <section class="topic">
-  <h2>Chapter 3: Dynamics</h2>
-  <p>Force, Newton's laws of motion, momentum, friction, circular motion and conservation of momentum.</p>
-  <a class="chapter-link" href="chapter3.html">Open Chapter 3</a>
+<h2>3. Key Points of Newton's Law of Gravitation</h2>
+<ul>
+<li>Every object attracts every other object.</li>
+<li>Gravitational force is always attractive.</li>
+<li>Greater masses produce greater gravitational force.</li>
+<li>Greater distance produces smaller gravitational force.</li>
+<li>The force acts along the line joining the centers of two objects.</li>
+<li>The gravitational force follows the inverse-square law.</li>
+</ul>
 </section>
 
 <section class="topic">
-  <h2>Chapter 4: Turning Effect of Forces</h2>
-  <p>Parallel forces, torque, centre of gravity, resolution of forces and equilibrium.</p>
-  <a class="chapter-link" href="chapter4.html">Open Chapter 4</a>
+<h2>4. Newton's Law of Gravitation and Newton's Third Law</h2>
+<p>Newton's third law states that every action has an equal and opposite reaction.</p>
+
+<p>According to the law of gravitation, the Earth attracts the Moon, and the Moon also attracts the Earth.</p>
+
+<p>Both forces have equal magnitude but opposite directions. They act on different objects.</p>
+
+<div class="formula">
+F(Earth on Moon) = -F(Moon on Earth)
+</div>
+
+<p>This is an example of Newton's third law of motion.</p>
 </section>
 
 <section class="topic">
-  <h2>Chapter 5: Forces and Matter</h2>
-  <p>Springs, Hooke's Law, pressure, fluids, Pascal's law and hydraulic machines.</p>
-  <a class="chapter-link" href="chapter5.html">Open Chapter 5</a>
+<h2>5. Newton's Three Laws of Motion (5 Lines)</h2>
+<ol>
+<li><b>First Law:</b> An object remains at rest or in uniform motion unless an external force acts on it.</li>
+<li><b>Second Law:</b> The acceleration of an object depends on the applied force and its mass.</li>
+<li><b>Formula:</b> F = ma, where F is force, m is mass and a is acceleration.</li>
+<li><b>Third Law:</b> Every action has an equal and opposite reaction.</li>
+<li><b>Example:</b> When we push a wall, the wall pushes us back with an equal and opposite force.</li>
+</ol>
 </section>
 
 <section class="topic">
-  <h2>Chapter 6: Gravitation</h2>
-  <p>Newton's Law of Gravitation, gravitational field, universal gravitational constant, mass of Earth, artificial satellites, orbital velocity and critical velocity.</p>
-  <a class="chapter-link" href="chapter6.html">Open Chapter 6</a>
+<h2>6. Gravitational Field</h2>
+<p>A gravitational field is the region around a massive object in which another object experiences gravitational force.</p>
+
+<h3>Example:</h3>
+<p>The Earth has a gravitational field around it. Any object placed in this field experiences gravitational attraction.</p>
+
+<div class="formula">
+g = F / m
+</div>
+
+<ul>
+<li>g = Gravitational field strength</li>
+<li>F = Gravitational force</li>
+<li>m = Mass of the object</li>
+</ul>
+
+<p>SI unit of gravitational field strength is N/kg.</p>
+</section>
+
+<section class="topic">
+<h2>7. Universal Gravitational Constant (G)</h2>
+<p>The universal gravitational constant is the constant used in Newton's law of gravitation.</p>
+
+<div class="formula">
+G = 6.67 × 10⁻¹¹ Nm²/kg²
+</div>
+
+<h3>Important Points:</h3>
+<ul>
+<li>It is represented by capital G.</li>
+<li>Its value is the same throughout the universe.</li>
+<li>It is a scalar constant.</li>
+<li>Its SI unit is Nm²/kg².</li>
+</ul>
+</section>
+
+<section class="topic">
+<h2>8. Mass of the Earth</h2>
+<p>The mass of the Earth can be calculated by using the gravitational acceleration at its surface.</p>
+
+<p>At the Earth's surface:</p>
+
+<div class="formula">
+g = GM / R²
+</div>
+
+<p>Rearranging the formula:</p>
+
+<div class="formula">
+M = gR² / G
+</div>
+
+<h3>Where:</h3>
+<ul>
+<li>M = Mass of Earth</li>
+<li>g = Acceleration due to gravity (9.8 m/s²)</li>
+<li>R = Radius of Earth (6.37 × 10⁶ m)</li>
+<li>G = Universal gravitational constant</li>
+</ul>
+
+<h3>Example:</h3>
+<p>Using the above values:</p>
+
+<div class="formula">
+M = (9.8 × (6.37 × 10⁶)²) / (6.67 × 10⁻¹¹)<br>
+M ≈ 5.97 × 10²⁴ kg
+</div>
+
+<p><b>Answer:</b> The mass of Earth is approximately 5.97 × 10²⁴ kg.</p>
+</section>
+
+<section class="topic">
+<h2>9. Artificial Satellites</h2>
+<p>An artificial satellite is a man-made object sent into space to revolve around the Earth or another celestial body.</p>
+
+<h3>Uses of Artificial Satellites:</h3>
+<ul>
+<li>Communication</li>
+<li>Weather forecasting</li>
+<li>Navigation and GPS</li>
+<li>Scientific research</li>
+<li>Earth observation</li>
+</ul>
+</section>
+
+<section class="topic">
+<h2>10. Newton's Law of Gravitation in the Motion of a Satellite</h2>
+<p>An artificial satellite revolves around the Earth because the Earth attracts it through gravitational force.</p>
+
+<p>This gravitational force provides the centripetal force required for circular motion.</p>
+
+<div class="formula">
+Gravitational Force = Centripetal Force<br>
+GMm / r² = mv² / r
+</div>
+
+<p>After simplifying:</p>
+
+<div class="formula">
+v = √(GM / r)
+</div>
+
+<p>This formula gives the orbital speed of a satellite in a circular orbit.</p>
+</section>
+
+<section class="topic">
+<h2>11. Motion of an Artificial Satellite Around the Earth</h2>
+<p>An artificial satellite moves around the Earth in an orbit due to gravitational attraction.</p>
+
+<ul>
+<li>Earth's gravitational force acts towards its center.</li>
+<li>This force provides centripetal force.</li>
+<li>The satellite has a tangential velocity.</li>
+<li>Its continuous motion around Earth forms an orbit.</li>
+</ul>
+
+<p>For a circular orbit, the orbital speed is:</p>
+
+<div class="formula">
+v = √(GM / r)
+</div>
+
+<p>Here, r is the distance from the center of Earth to the satellite.</p>
+</section>
+
+<section class="topic">
+<h2>12. Types of Artificial Satellites</h2>
+
+<h3>1. Communication Satellites</h3>
+<p>These satellites are used for television, telephone and internet communication.</p>
+
+<h3>2. Weather Satellites</h3>
+<p>These satellites observe clouds, storms and weather conditions.</p>
+
+<h3>3. Navigation Satellites</h3>
+<p>These satellites help us find locations and directions using systems such as GPS.</p>
+
+<h3>4. Scientific Satellites</h3>
+<p>These satellites collect information for scientific research.</p>
+
+<h3>5. Earth Observation Satellites</h3>
+<p>These satellites take pictures and collect information about the Earth's surface.</p>
+</section>
+
+<section class="topic">
+<h2>13. Mass of a Satellite</h2>
+<p>The mass of a satellite is the amount of matter contained in it.</p>
+
+<p>When a satellite moves around Earth, its mass remains constant. Its weight depends on the gravitational field at its location.</p>
+
+<div class="formula">
+F = GMm / r²
+</div>
+
+<p>Rearranging this equation to calculate satellite mass:</p>
+
+<div class="formula">
+m = Fr² / GM
+</div>
+
+<h3>Where:</h3>
+<ul>
+<li>m = Mass of satellite</li>
+<li>F = Gravitational force</li>
+<li>M = Mass of Earth</li>
+<li>r = Distance from Earth's center</li>
+<li>G = Gravitational constant</li>
+</ul>
+</section>
+
+<section class="topic">
+<h2>14. Weight of a Satellite</h2>
+<p>Weight is the gravitational force acting on a satellite.</p>
+
+<div class="formula">
+W = mg
+</div>
+
+<p>For a satellite at distance r from the center of Earth:</p>
+
+<div class="formula">
+W = GMm / r²
+</div>
+
+<p>As the satellite moves farther from Earth, the gravitational field strength and its weight decrease.</p>
+</section>
+
+<section class="topic">
+<h2>15. Orbital Velocity</h2>
+<p>Orbital velocity is the speed required by a satellite to remain in its orbit around Earth.</p>
+
+<div class="formula">
+v = √(GM / r)
+</div>
+
+<h3>Where:</h3>
+<ul>
+<li>v = Orbital velocity</li>
+<li>G = Gravitational constant</li>
+<li>M = Mass of Earth</li>
+<li>r = Orbital radius</li>
+</ul>
+</section>
+
+<section class="topic">
+<h2>16. Time Period of a Satellite</h2>
+<p>The time period is the time taken by a satellite to complete one revolution around Earth.</p>
+
+<div class="formula">
+T = 2πr / v
+</div>
+
+<p>Using the orbital velocity formula:</p>
+
+<div class="formula">
+T = 2π√(r³ / GM)
+</div>
+
+<p>The SI unit of time period is second (s).</p>
+</section>
+
+<section class="topic">
+<h2>17. Critical Velocity</h2>
+<p>Critical velocity is the minimum horizontal speed required for a satellite to move in a stable circular orbit at a particular orbital radius, in the ideal model.</p>
+
+<div class="formula">
+v = √(GM / r)
+</div>
+
+<p>For a satellite very close to the Earth's surface, ignoring air resistance:</p>
+
+<div class="formula">
+v ≈ 7.9 km/s
+</div>
+
+<p>This is approximately the first cosmic speed near Earth's surface.</p>
+</section>
+
+<section class="topic">
+<h2>18. Important Formulas</h2>
+
+<table>
+<tr>
+<th>Physical Quantity</th>
+<th>Formula</th>
+</tr>
+<tr>
+<td>Gravitational Force</td>
+<td>F = Gm₁m₂ / r²</td>
+</tr>
+<tr>
+<td>Gravitational Field Strength</td>
+<td>g = F / m</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>W = mg</td>
+</tr>
+<tr>
+<td>Mass of Earth</td>
+<td>M = gR² / G</td>
+</tr>
+<tr>
+<td>Orbital Velocity</td>
+<td>v = √(GM / r)</td>
+</tr>
+<tr>
+<td>Time Period</td>
+<td>T = 2π√(r³ / GM)</td>
+</tr>
+<tr>
+<td>Gravitational Force on Satellite</td>
+<td>F = GMm / r²</td>
+</tr>
+</table>
+</section>
+
+<section class="topic">
+<h2>19. Solved Numerical Example</h2>
+
+<p><b>Question:</b> Calculate the orbital velocity of a satellite if GM = 3.986 × 10¹⁴ m³/s² and its orbital radius is 7.0 × 10⁶ m.</p>
+
+<p><b>Given:</b></p>
+<ul>
+<li>GM = 3.986 × 10¹⁴ m³/s²</li>
+<li>r = 7.0 × 10⁶ m</li>
+</ul>
+
+<p><b>Formula:</b></p>
+<div class="formula">
+v = √(GM / r)
+</div>
+
+<p><b>Solution:</b></p>
+<div class="formula">
+v = √((3.986 × 10¹⁴) / (7.0 × 10⁶))<br>
+v = √(5.694 × 10⁷)<br>
+v ≈ 7546 m/s
+</div>
+
+<p><b>Answer:</b> Orbital velocity is approximately 7.55 × 10³ m/s.</p>
+</section>
+
+<section class="topic">
+<h2>20. Important MCQs</h2>
+
+<h3>1. Who discovered the law of universal gravitation?</h3>
+<p>A) Einstein &nbsp; B) Newton &nbsp; C) Galileo &nbsp; D) Faraday</p>
+<p><b>Answer: B) Newton</b></p>
+
+<h3>2. What is the SI unit of gravitational force?</h3>
+<p>A) Joule &nbsp; B) Newton &nbsp; C) Watt &nbsp; D) Metre</p>
+<p><b>Answer: B) Newton</b></p>
+
+<h3>3. What is the value of G?</h3>
+<p>A) 9.8 &nbsp; B) 6.67 × 10⁻¹¹ &nbsp; C) 3 × 10⁸ &nbsp; D) 1.6 × 10⁻¹⁹</p>
+<p><b>Answer: B) 6.67 × 10⁻¹¹ Nm²/kg²</b></p>
+
+<h3>4. Which force keeps a satellite in orbit?</h3>
+<p>A) Friction &nbsp; B) Magnetic force &nbsp; C) Gravitational force &nbsp; D) Electric force</p>
+<p><b>Answer: C) Gravitational force</b></p>
+
+<h3>5. What is the approximate mass of Earth?</h3>
+<p>A) 5.97 × 10²⁴ kg &nbsp; B) 6 kg &nbsp; C) 9.8 kg &nbsp; D) 10² kg</p>
+<p><b>Answer: A) 5.97 × 10²⁴ kg</b></p>
+
+<h3>6. What is the approximate orbital speed near Earth's surface?</h3>
+<p>A) 100 m/s &nbsp; B) 500 m/s &nbsp; C) 7.9 km/s &nbsp; D) 30 km/s</p>
+<p><b>Answer: C) 7.9 km/s</b></p>
+
+<h3>7. What does G represent?</h3>
+<p>A) Acceleration &nbsp; B) Universal gravitational constant &nbsp; C) Mass &nbsp; D) Weight</p>
+<p><b>Answer: B) Universal gravitational constant</b></p>
+
+<h3>8. What is the SI unit of mass?</h3>
+<p>A) Newton &nbsp; B) Metre &nbsp; C) Kilogram &nbsp; D) Second</p>
+<p><b>Answer: C) Kilogram</b></p>
+
+<h3>9. Which force provides centripetal force to an Earth satellite?</h3>
+<p>A) Gravitational force &nbsp; B) Friction &nbsp; C) Air resistance &nbsp; D) Magnetic force</p>
+<p><b>Answer: A) Gravitational force</b></p>
+
+<h3>10. What is the SI unit of time period?</h3>
+<p>A) Metre &nbsp; B) Second &nbsp; C) Newton &nbsp; D) Kilogram</p>
+<p><b>Answer: B) Second</b></p>
+</section>
+
+<section class="topic">
+<h2>21. Important Short Questions</h2>
+<ol>
+<li>Define gravitation.</li>
+<li>State Newton's law of universal gravitation.</li>
+<li>Write the key points of Newton's law of gravitation.</li>
+<li>Explain the relation between gravitation and Newton's third law.</li>
+<li>Define gravitational field.</li>
+<li>What is the universal gravitational constant?</li>
+<li>How can we calculate the mass of Earth?</li>
+<li>What is an artificial satellite?</li>
+<li>Explain the motion of an artificial satellite around Earth.</li>
+<li>Write the types and uses of artificial satellites.</li>
+<li>Define orbital velocity and write its formula.</li>
+<li>What is the time period of a satellite?</li>
+<li>Define critical velocity.</li>
+</ol>
+</section>
+
+<section class="topic">
+<h2>22. Quick Revision</h2>
+<ul>
+<li>Gravitation is the force of attraction between masses.</li>
+<li>Newton gave the universal law of gravitation.</li>
+<li>G = 6.67 × 10⁻¹¹ Nm²/kg².</li>
+<li>Mass of Earth ≈ 5.97 × 10²⁴ kg.</li>
+<li>Gravitational force keeps satellites in orbit.</li>
+<li>Orbital velocity depends on Earth's mass and orbital radius.</li>
+<li>Time period is the time taken for one complete revolution.</li>
+<li>Critical velocity near Earth's surface is approximately 7.9 km/s.</li>
+</ul>
 </section>
 
 </main>
 
 <footer>
-  <p>© 2026 GM NOTES | Learn Today, Lead Tomorrow!</p>
+<p>© 2026 GM NOTES | Learn Today, Lead Tomorrow!</p>
 </footer>
 
 </body>
