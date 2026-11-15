@@ -1,1 +1,167 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GM NOTES - Educational Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f8ff;
+      color: #26344a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0756b5;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 { font-size: 27px; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: linear-gradient(120deg, #0756b5, #168bd8);
+      color: white;
+    }
+
+    .hero h1 { font-size: 42px; margin-bottom: 12px; }
+    .hero p { font-size: 18px; }
+
+    .section {
+      padding: 50px 8%;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #0756b5;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .subject {
+      background: white;
+      padding: 28px 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #00000012;
+      border-bottom: 4px solid #168bd8;
+    }
+
+    .subject h3 {
+      color: #0756b5;
+      margin-bottom: 10px;
+    }
+
+    .subject p { color: #596579; }
+
+    .about {
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      background: #073b78;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav a { margin: 5px 8px; display: inline-block; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>GM NOTES</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to GM NOTES</h1>
+    <p>Your Learning Journey Starts Here!</p>
+    <p>Study Notes, Important Questions and MCQs</p>
+  </section>
+
+  <section class="section" id="subjects">
+    <h2>Our Subjects</h2>
+    <div class="subjects">
+      <div class="subject">
+        <h3>Physics</h3>
+        <p>Notes, formulas and important questions.</p>
+      </div>
+      <div class="subject">
+        <h3>Chemistry</h3>
+        <p>Easy notes and chapter explanations.</p>
+      </div>
+      <div class="subject">
+        <h3>Mathematics</h3>
+        <p>Formulas and solved exercises.</p>
+      </div>
+      <div class="subject">
+        <h3>Biology</h3>
+        <p>Important topics and short questions.</p>
+      </div>
+      <div class="subject">
+        <h3>English</h3>
+        <p>Grammar, essays and translations.</p>
+      </div>
+      <div class="subject">
+        <h3>MCQs</h3>
+        <p>Practice questions for exam preparation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About GM NOTES</h2>
+    <div class="about">
+      <p>GM NOTES is an educational platform created to help students learn easily. Here students can find study notes, important questions, explanations and MCQs.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 GM NOTES. All Rights Reserved.</p>
+    <p>Learn Today, Lead Tomorrow!</p>
+  </footer>
+
+</body>
+</html>
+
