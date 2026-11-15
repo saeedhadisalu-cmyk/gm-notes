@@ -4,122 +4,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Physics Notes | GM NOTES</title>
 
 <style>
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
-    line-height: 1.6;
+  background: #f4f8ff;
+  color: #26344a;
+  line-height: 1.7;
 }
 
 header {
-    background: #123b63;
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
+  background: #0756b5;
+  color: white;
+  padding: 20px 8%;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 34px;
+header a {
+  color: white;
+  text-decoration: none;
 }
 
-header p {
-    margin: 5px 0;
+.hero {
+  background: linear-gradient(120deg, #0756b5, #168bd8);
+  color: white;
+  text-align: center;
+  padding: 40px 15px;
 }
 
-nav {
-    background: #0b2945;
-    text-align: center;
-    padding: 13px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
+.hero h1 {
+  font-size: 30px;
 }
 
 .container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 15px;
+  max-width: 950px;
+  margin: auto;
+  padding: 30px 18px;
 }
 
-.page-title {
-    text-align: center;
-    color: #123b63;
-    margin-bottom: 25px;
+.topic {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #00000010;
 }
 
-.chapter-card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 18px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #00000012;
-    border-left: 5px solid #1769aa;
+h2 {
+  color: #0756b5;
+  margin-bottom: 12px;
 }
 
-.chapter-card h2 {
-    margin-top: 0;
-    color: #14558a;
-    font-size: 22px;
+.topic p {
+  margin-bottom: 10px;
 }
 
-.chapter-card p {
-    color: #555;
-    margin-bottom: 15px;
+.chapter-link {
+  display: inline-block;
+  background: #0756b5;
+  color: white;
+  padding: 9px 18px;
+  margin-top: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.chapter-card a {
-    display: inline-block;
-    background: #14558a;
-    color: white;
-    padding: 9px 17px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.chapter-card a:hover {
-    background: #0b2945;
+.chapter-link:hover {
+  background: #073b78;
 }
 
 footer {
-    background: #123b63;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 35px;
+  background: #073b78;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-footer p {
-    margin: 0;
-}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 24px;
+  }
 
-@media(max-width:600px) {
-    header h1 {
-        font-size: 27px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .chapter-card {
-        padding: 16px;
-    }
+  .topic {
+    padding: 18px;
+  }
 }
 </style>
 </head>
@@ -127,73 +102,58 @@ footer p {
 <body>
 
 <header>
-    <h1>GM NOTES</h1>
-    <p>Learn Something New Every Day</p>
-    <h2>Physics Notes</h2>
-    <p>Class 9 Physics | Complete Chapter Notes</p>
+  <h2 style="color:white;">GM NOTES</h2>
+  <a href="index.html">← Back to Home</a>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="physics.html">Physics</a>
-</nav>
+<section class="hero">
+  <h1>Class 9 Physics Notes</h1>
+  <p>Complete Physics Chapters | Easy English Notes</p>
+  <p>GM NOTES - Learn Physics Easily</p>
+</section>
 
-<div class="container">
+<main class="container">
 
-    <h1 class="page-title">Class 9 Physics Chapters</h1>
+<section class="topic">
+  <h2>Chapter 1: Physical Quantities and Measurement</h2>
+  <p>Physical quantities, fundamental quantities, derived quantities, SI units, measuring instruments and prefixes.</p>
+  <a class="chapter-link" href="chapter1.html">Open Chapter 1</a>
+</section>
 
-    <div class="chapter-card">
-        <h2>
-            <a href="chapter1.html">Chapter 1: Physical Quantities and Measurement</a>
-        </h2>
-        <p>Physical quantities, SI units, prefixes, measuring instruments and measurement.</p>
-        <a href="chapter1.html">Open Chapter 1</a>
-    </div>
+<section class="topic">
+  <h2>Chapter 2: Kinematics</h2>
+  <p>Distance, displacement, speed, velocity, acceleration and equations of motion.</p>
+  <a class="chapter-link" href="chapter2.html">Open Chapter 2</a>
+</section>
 
-    <div class="chapter-card">
-        <h2>
-            <a href="chapter2.html">Chapter 2: Kinematics</a>
-        </h2>
-        <p>Distance, displacement, speed, velocity, acceleration and equations of motion.</p>
-        <a href="chapter2.html">Open Chapter 2</a>
-    </div>
+<section class="topic">
+  <h2>Chapter 3: Dynamics</h2>
+  <p>Force, Newton's laws of motion, momentum, friction, circular motion and conservation of momentum.</p>
+  <a class="chapter-link" href="chapter3.html">Open Chapter 3</a>
+</section>
 
-    <div class="chapter-card">
-        <h2>
-            <a href="chapter3.html">Chapter 3: Dynamics</a>
-        </h2>
-        <p>Force, Newton's laws, momentum, friction, circular motion and conservation of momentum.</p>
-        <a href="chapter3.html">Open Chapter 3</a>
-    </div>
+<section class="topic">
+  <h2>Chapter 4: Turning Effect of Forces</h2>
+  <p>Parallel forces, torque, centre of gravity, resolution of forces and equilibrium.</p>
+  <a class="chapter-link" href="chapter4.html">Open Chapter 4</a>
+</section>
 
-    <div class="chapter-card">
-        <h2>
-            <a href="chapter4.html">Chapter 4: Turning Effect of Forces</a>
-        </h2>
-        <p>Parallel forces, torque, centre of gravity and equilibrium.</p>
-        <a href="chapter4.html">Open Chapter 4</a>
-    </div>
+<section class="topic">
+  <h2>Chapter 5: Forces and Matter</h2>
+  <p>Springs, Hooke's Law, pressure, fluids, Pascal's law and hydraulic machines.</p>
+  <a class="chapter-link" href="chapter5.html">Open Chapter 5</a>
+</section>
 
-    <div class="chapter-card">
-        <h2>
-            <a href="chapter5.html">Chapter 5: Forces and Matter</a>
-        </h2>
-        <p>Springs, Hooke's Law, pressure, fluids and hydraulic machines.</p>
-        <a href="chapter5.html">Open Chapter 5</a>
-    </div>
+<section class="topic">
+  <h2>Chapter 6: Gravitation</h2>
+  <p>Newton's Law of Gravitation, gravitational field, universal gravitational constant, mass of Earth, artificial satellites, orbital velocity and critical velocity.</p>
+  <a class="chapter-link" href="chapter6.html">Open Chapter 6</a>
+</section>
 
-    <div class="chapter-card">
-        <h2>
-            <a href="chapter6.html">Chapter 6: Gravitation</a>
-        </h2>
-        <p>Newton's Law of Gravitation, gravitational field, mass of Earth, artificial satellites and critical velocity.</p>
-        <a href="chapter6.html">Open Chapter 6</a>
-    </div>
-
-</div>
+</main>
 
 <footer>
-    <p>© 2026 GM NOTES | Learn Something New Every Day</p>
+  <p>© 2026 GM NOTES | Learn Today, Lead Tomorrow!</p>
 </footer>
 
 </body>
