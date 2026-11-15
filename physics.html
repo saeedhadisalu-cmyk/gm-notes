@@ -4,100 +4,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Physics - GM NOTES</title>
+
+<title>Physics Notes | GM NOTES</title>
+
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f1f5f9;
-  color: #1e293b;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
 }
+
 header {
-  background: #0756a5;
-  color: white;
-  text-align: center;
-  padding: 25px;
+    background: #123b63;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+nav {
+    background: #0b2945;
+    text-align: center;
+    padding: 13px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
 .container {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 15px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
 }
-h2 {
-  color: #0756a5;
-  text-align: center;
+
+.page-title {
+    text-align: center;
+    color: #123b63;
+    margin-bottom: 25px;
 }
-.card {
-  display: block;
-  background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #1e293b;
-  box-shadow: 0 3px 10px #00000012;
+
+.chapter-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000012;
+    border-left: 5px solid #1769aa;
 }
-.card:hover {
-  background: #e0f2fe;
+
+.chapter-card h2 {
+    margin-top: 0;
+    color: #14558a;
+    font-size: 22px;
 }
-.card h3 {
-  color: #0756a5;
-  margin-top: 0;
+
+.chapter-card p {
+    color: #555;
+    margin-bottom: 15px;
 }
+
+.chapter-card a {
+    display: inline-block;
+    background: #14558a;
+    color: white;
+    padding: 9px 17px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.chapter-card a:hover {
+    background: #0b2945;
+}
+
 footer {
-  background: #0756a5;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+    background: #123b63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .chapter-card {
+        padding: 16px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>GM NOTES</h1>
-  <p>Physics Study Notes</p>
+    <h1>GM NOTES</h1>
+    <p>Learn Something New Every Day</p>
+    <h2>Physics Notes</h2>
+    <p>Class 9 Physics | Complete Chapter Notes</p>
 </header>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="physics.html">Physics</a>
+</nav>
+
 <div class="container">
-  <h2>Physics Chapters</h2>
 
-  <a href="chapter1.html" class="card">
-    <h3>Chapter 1: Physical Quantities and Measurement</h3>
-    <p>Fundamental quantities, SI units and measurement.</p>
-  </a>
+    <h1 class="page-title">Class 9 Physics Chapters</h1>
 
-  <a href="chapter2.html" class="card">
-    <h3>Chapter 2: Kinematics</h3>
-    <p>Distance, displacement, speed, velocity and acceleration.</p>
-  </a>
+    <div class="chapter-card">
+        <h2>
+            <a href="chapter1.html">Chapter 1: Physical Quantities and Measurement</a>
+        </h2>
+        <p>Physical quantities, SI units, prefixes, measuring instruments and measurement.</p>
+        <a href="chapter1.html">Open Chapter 1</a>
+    </div>
 
-  <a href="chapter3.html" class="card">
-    <h3>Chapter 3: Dynamics</h3>
-    <p>Force, momentum, Newton's laws, circular motion and friction.</p>
-  </a>
+    <div class="chapter-card">
+        <h2>
+            <a href="chapter2.html">Chapter 2: Kinematics</a>
+        </h2>
+        <p>Distance, displacement, speed, velocity, acceleration and equations of motion.</p>
+        <a href="chapter2.html">Open Chapter 2</a>
+    </div>
 
-  <a href="chapter4.html" class="card">
-    <h3>Chapter 4: Turning Effect of Forces</h3>
-    <p>Parallel forces, torque, centre of gravity and equilibrium.</p>
-  </a>
+    <div class="chapter-card">
+        <h2>
+            <a href="chapter3.html">Chapter 3: Dynamics</a>
+        </h2>
+        <p>Force, Newton's laws, momentum, friction, circular motion and conservation of momentum.</p>
+        <a href="chapter3.html">Open Chapter 3</a>
+    </div>
 
-  <a href="chapter5.html" class="card">
-    <h3>Chapter 5: Forces and Matter</h3>
-    <p>Springs, Hooke's Law, pressure, fluids and hydraulic machines.</p>
-  </a>
+    <div class="chapter-card">
+        <h2>
+            <a href="chapter4.html">Chapter 4: Turning Effect of Forces</a>
+        </h2>
+        <p>Parallel forces, torque, centre of gravity and equilibrium.</p>
+        <a href="chapter4.html">Open Chapter 4</a>
+    </div>
+
+    <div class="chapter-card">
+        <h2>
+            <a href="chapter5.html">Chapter 5: Forces and Matter</a>
+        </h2>
+        <p>Springs, Hooke's Law, pressure, fluids and hydraulic machines.</p>
+        <a href="chapter5.html">Open Chapter 5</a>
+    </div>
+
+    <div class="chapter-card">
+        <h2>
+            <a href="chapter6.html">Chapter 6: Gravitation</a>
+        </h2>
+        <p>Newton's Law of Gravitation, gravitational field, mass of Earth, artificial satellites and critical velocity.</p>
+        <a href="chapter6.html">Open Chapter 6</a>
+    </div>
 
 </div>
 
 <footer>
-  <p>© 2026 GM NOTES | Learn Something New Every Day</p>
+    <p>© 2026 GM NOTES | Learn Something New Every Day</p>
 </footer>
 
 </body>
-</html> 
-<div class="chapter-card">
-    <h3>Chapter 6: Gravitation</h3>
-    <p>Newton's Law of Gravitation, Earth, Satellites and Critical Velocity.</p>
-    <a href="chapter6.html">Open Chapter 6</a>
-</div>
+</html>
